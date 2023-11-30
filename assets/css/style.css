@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #09057e;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+aside {
+  flex: 0 0 30%;
+  background-color: #f2f2f2;
+}
+
+#search-input {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 30%;
+}
+
+#search-button {
+  padding: 5px 10px;
+  width: 20%;
+  background-color: #09057e;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.flex-container {
+  flex: 85%;
+  flex-wrap: wrap display: flex;
+  justify-content: space-between;
+}
+
+.weather-container {
+  flex: 0 0 calc(30% - 20px);
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.weather-container h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.weather-info-item {
+  margin-bottom: 30px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-label {
+  font-weight: bold;
+}
+
+.city-option {
+  padding: 5px 10px;
+  width: 30%;
+  background-color: #cbcbce;
+  color: #080808;
+  border: 2px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.city-button {
+  padding: 5px 10px;
+  width: 30%;
+  background-color: #cbcbce;
+  color: #080808;
+  border: 2px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.weather-container {
+  display: none;
+}
+
+.forecast-box {
+  border: 3px solid #ccc;
+  padding: 10px;
+  margin-bottom: 30px;
+  display: inline-block;
+  width: calc(20% - 10px);
+  margin-right: 30px;
+  text-align: center;
+  color: white;
+  background-color: #09057e;
+}
+
+.forecast-box .date {
+  font-weight: bold;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.forecast-box .weather-info p {
+  margin-bottom: 5px;
+  align-items: center;
+}
